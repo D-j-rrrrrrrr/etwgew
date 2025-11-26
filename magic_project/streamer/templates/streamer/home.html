@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Magic Gesture Camera 🧙‍♂️</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            margin-bottom: 5px;
+        }
+
+        .feed-container {
+            border: 5px solid #00ff00;
+            display: inline-block;
+            border-radius: 10px;
+            box-shadow: 0 0 20px #00ff00;
+            margin-top: 20px;
+        }
+
+        img {
+            width: 100%;
+            max-width: 800px;
+            border-radius: 5px;
+        }
+
+        .instructions {
+            margin-top: 20px;
+            color: #aaa;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>POV: Coding feels like Magic 🎩</h1>
+    <h3>Stack: Django + OpenCV + MediaPipe</h3>
+
+    <div class="feed-container">
+        <!-- This Image tag pulls the stream from Django -->
+        <img src="{% url 'video_feed' %}">
+    </div>
+
+    <div class="instructions">
+        <p>👋 <b>Gestures:</b></p>
+        <p>Swipe Right 👉 Cartoon Mode</p>
+        <p>Swipe Left 👈 Grayscale Mode</p>
+        <p>Fist ✊ Normal Mode</p>
+    </div>
+</body>
+
+</html>
